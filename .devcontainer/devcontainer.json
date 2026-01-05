@@ -3,9 +3,10 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
+  "workspaceFolder": "/workspaces/master_degree_lab",
   "forwardPorts": [8888],
   "mounts": [
-    "source=${localEnv:HOME}/Documents/pos/LLM-MRI,target=/llm-mri,type=bind"
+    "source=${localWorkspaceFolder}/../LLM-MRI,target=/llm-mri,type=bind,consistency=cached"
   ],
   "postCreateCommand": "pip install -r docker_requirements.txt && pip install -e /llm-mri",
   "customizations": {
