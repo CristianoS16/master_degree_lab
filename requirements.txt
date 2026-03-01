@@ -1,0 +1,56 @@
+# Core scientific packages (instalados separadamente no setup_local.sh)
+# numpy==1.26.4
+# scipy==1.16.3
+# pandas==2.3.3
+# torch==2.9.1
+
+# Data processing and ML
+datasets==2.21.0
+transformers==4.57.2
+tokenizers==0.22.1
+# scikit-learn==1.4.2 instalado separadamente no setup_local.sh
+sklearn-preprocessing==0.1.0
+umap-learn==0.5.7
+torchdr==0.2
+
+# Visualization
+matplotlib==3.10.7
+seaborn==0.13.2
+graphviz==0.20.3
+pydot==2.0.0
+# pygraphviz instalado separadamente no setup_local.sh
+
+# Network analysis
+networkx==3.6
+
+# Jupyter and notebook
+jupyter==1.1.1
+jupyterlab==4.5.0
+notebook==7.5.0
+ipykernel==6.31.0
+ipython==9.7.0
+
+# Utilities
+tqdm==4.67.1
+requests==2.32.5
+PyYAML==6.0.3
+pillow==12.0.0
+openpyxl==3.1.5
+progress==1.6.1
+
+# HuggingFace
+huggingface-hub==0.36.0
+safetensors==0.7.0
+
+# System dependencies
+pyarrow==22.0.0
+fsspec==2024.6.1
+filelock==3.20.0
+regex==2025.11.3
+xxhash==3.6.0
+
+# PyQt6 para visualizações
+PyQt6==6.10.0
+
+# Text explainability
+text-explainability>=0.7.0
