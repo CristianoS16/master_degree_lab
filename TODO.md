@@ -1,10 +1,17 @@
-- [ ] Tentar experimentos com grupos de natureza distintas (revisitar experimentos com os papers)
 
-- [ ] Estudar a fundo a redução de dimensionalidade para entender as inversões. 
-- [ ] Rodar com modelos diferentes do Berd --> GPT2 e ModernBERT (Entender melhor esse modernBERT)
+- [x] Estudar a fundo para entender as inversões. 
+  - [ ] Porque imagem do grid não mostrar ele completo? Há erro no tamanho do grid??
 - [ ] Começar a tirar metricas considerando a caracteristica multipartida da rede. Entender o que são as metricas para a rede multipartida --> Atenção na normalização das métricas.
 - [ ] Bolar alguma forma de desvinvular dados do codigo, sincronizar com alguma coisa e apagar imediatamente. 
     - [ ] Usar ssh somente para executar a lib, fazer todo o resto local.
+
+- [ ] Rodar com modelos diferentes do Berd --> GPT2 e ModernBERT (Entender melhor esse modernBERT)
+- [ ] Se for seguir essa abordagem tem que ver melhor isso aqui: "A naive classifier at a single layer cannot either, be-
+cause information about a particular span may be spread out across several layers," - BERT Rediscovers the Classical NLP Pipeline
+  - [ ] Possivel usar uma abordagem acumulativa, onde layers são adicionadas, como no paper
+
+- [ ] comparação entre o BERT base e o completo, o comportamento se repete quando olhamos relativo ao tamanho do modelo? Isso é, se normalizar, vemos os mesmos comportamentos nos mesmos pontos?
+
 
 - [ ] Comparação entre Tarefas de Naturezas Diferentes: No seu código, você definiu os datasets bigram_shift, odd_man_out e sentence_length. Essas tarefas medem propriedades diferentes (sintaxe, semântica e informações superficiais). Avalie se tarefas semânticas (como a anomalia do odd_man_out) geram grafos mais complexos e densos do que tarefas puramente de superfície (como sentence_length).
 - [ ] Verificar se grid gerado esta condizente com o grafo
@@ -33,6 +40,7 @@
 
 
 
+- [x] Tentar experimentos com grupos de natureza distintas (revisitar experimentos com os papers)
 - [x] Plotar distribuição dos pesos das arestas antes e depois do filtro --> Distribuição continua Livre de Escala --> continua sendo uma rede complexa
 - [x] No SentEval, as frases são as mesmas para todos as tasks? Isso pode afetar o bert e o NRAG produzido.
   - Paper fala de "The sentences for all our tasks are extracted from the Toronto Book Corpus (Zhu et al., 2015), more specifically
