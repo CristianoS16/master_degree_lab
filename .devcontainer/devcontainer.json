@@ -3,6 +3,7 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
+  "remoteUser": "root",
   "workspaceFolder": "/workspaces/master_degree_lab",
   "forwardPorts": [8888],
   "mounts": [
