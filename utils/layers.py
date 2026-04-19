@@ -1,4 +1,6 @@
 from functools import partial
+import numpy as np
+import networkx as nx
 
 
 def get_layer_number(node_name):
@@ -176,17 +178,17 @@ def get_center_of_mass_per_layer(graph, axl):
 
 def get_metric_function(metric_name=None):
     metric_name_dict = {
-        # "degree_per_layer": get_degree_per_layer,
+        "degree_per_layer": get_degree_per_layer,
         "num_nodes_per_layer": get_num_nodes_per_layer,
         "num_edges_per_layer": get_num_edges_per_layer,
-        # "node_betweenness_per_layer": get_node_betweenness_per_layer,
-        # "edge_betweenness_per_layer": get_edge_betweenness_per_layer,
-        # "node_strength_per_layer":get_node_strength_per_layer,
-        # # TODO: implementar a assortatividade de duas a duas camadas
-        # # "assortativity_per_layer": get_assortativity_per_layer,
-        # "average_neighbor_degree": get_average_neighbor_degree_per_layer,
-        # "center_of_mass_x": partial(get_center_of_mass_per_layer, axl="x"),
-        # "center_of_mass_y": partial(get_center_of_mass_per_layer, axl="y"),
+        "node_betweenness_per_layer": get_node_betweenness_per_layer,
+        "edge_betweenness_per_layer": get_edge_betweenness_per_layer,
+        "node_strength_per_layer": get_node_strength_per_layer,
+        # TODO: implementar a assortatividade de duas a duas camadas
+        # "assortativity_per_layer": get_assortativity_per_layer,
+        "average_neighbor_degree": get_average_neighbor_degree_per_layer,
+        "center_of_mass_x": partial(get_center_of_mass_per_layer, axl="x"),
+        "center_of_mass_y": partial(get_center_of_mass_per_layer, axl="y"),
     }
     if metric_name is None:
         return metric_name_dict

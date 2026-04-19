@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   gcc \
   g++ \
   git \
+  sudo \
   && rm -rf /var/lib/apt/lists/*
 
 # Define variáveis de ambiente para ajudar o pygraphviz a encontrar as bibliotecas

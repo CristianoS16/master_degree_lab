@@ -5,6 +5,7 @@
   },
   "remoteUser": "root",
   "workspaceFolder": "/workspaces/master_degree_lab",
+  "runArgs": ["--userns=host"],
   "forwardPorts": [8888],
   "mounts": [
     "source=${localWorkspaceFolder}/../LLM-MRI,target=/llm-mri,type=bind,consistency=cached"

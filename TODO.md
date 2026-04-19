@@ -1,6 +1,13 @@
+- [ ] moralizar notebooks para reunião com o Celso
+- [ ] Melhorar experimento das noticias
+  - [ ] Adicionar um dominio completamente diferente (papers/receitas) - Rede pode não ser influenciada pelo assunto, fazer teste com estruturas diferentes (prontuario/receita)...
+  - [ ] Ver como as curvas se comportam --> Calcular a correlação no experimento das noticias
+  - [ ] Tentar aplicar algum tipo de clusterização nas curvas do grafico? Alguma forma de ver a correlação na camada?  
+  - [ ] Normalizar dados para fazer graficos?
 
-- [x] Estudar a fundo para entender as inversões. 
-  - [ ] Porque imagem do grid não mostrar ele completo? Há erro no tamanho do grid??
+- [] Ajustar geração de imagens da lib para grande volume de dados
+
+
 - [ ] Começar a tirar metricas considerando a caracteristica multipartida da rede. Entender o que são as metricas para a rede multipartida --> Atenção na normalização das métricas.
 - [ ] Bolar alguma forma de desvinvular dados do codigo, sincronizar com alguma coisa e apagar imediatamente. 
     - [ ] Usar ssh somente para executar a lib, fazer todo o resto local.
@@ -39,7 +46,10 @@ cause information about a particular span may be spread out across several layer
 # ======================================================== DONE ========================================================
 
 
-
+- [x] Estudar a fundo para entender as inversões. 
+  - [x] Porque imagem do grid não mostrar ele completo? Há erro no tamanho do grid??
+    - Da forma que estava implementado eliminava qualquer linha ou coluna com somente zeros --> foi adicionado um parametro para contornar isso
+  - [x] Apresentar grid completo, mesmo com colunas e linhas com somente zero
 - [x] Tentar experimentos com grupos de natureza distintas (revisitar experimentos com os papers)
 - [x] Plotar distribuição dos pesos das arestas antes e depois do filtro --> Distribuição continua Livre de Escala --> continua sendo uma rede complexa
 - [x] No SentEval, as frases são as mesmas para todos as tasks? Isso pode afetar o bert e o NRAG produzido.
