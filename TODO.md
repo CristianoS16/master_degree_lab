@@ -1,12 +1,4 @@
-- [ ] moralizar notebooks para reunião com o Celso
-- [ ] Melhorar experimento das noticias
-  - [ ] Adicionar um dominio completamente diferente (papers/receitas) - Rede pode não ser influenciada pelo assunto, fazer teste com estruturas diferentes (prontuario/receita)...
-  - [ ] Ver como as curvas se comportam --> Calcular a correlação no experimento das noticias
-  - [ ] Tentar aplicar algum tipo de clusterização nas curvas do grafico? Alguma forma de ver a correlação na camada?  
-  - [ ] Normalizar dados para fazer graficos?
-
 - [] Ajustar geração de imagens da lib para grande volume de dados
-
 
 - [ ] Começar a tirar metricas considerando a caracteristica multipartida da rede. Entender o que são as metricas para a rede multipartida --> Atenção na normalização das métricas.
 - [ ] Bolar alguma forma de desvinvular dados do codigo, sincronizar com alguma coisa e apagar imediatamente. 
@@ -45,7 +37,11 @@ cause information about a particular span may be spread out across several layer
 
 # ======================================================== DONE ========================================================
 
-
+- [x] Melhorar experimento das noticias
+  - [x] Adicionar um dominio completamente diferente (papers/receitas) - Rede pode não ser influenciada pelo assunto, fazer teste com estruturas diferentes (prontuario/receita)...
+  - [x] Ver como as curvas se comportam --> Calcular a correlação no experimento das noticias
+  - [x] Normalizar dados para fazer graficos?
+- [x] moralizar notebooks para reunião com o Celso
 - [x] Estudar a fundo para entender as inversões. 
   - [x] Porque imagem do grid não mostrar ele completo? Há erro no tamanho do grid??
     - Da forma que estava implementado eliminava qualquer linha ou coluna com somente zeros --> foi adicionado um parametro para contornar isso
