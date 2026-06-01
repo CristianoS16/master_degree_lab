@@ -1,10 +1,13 @@
-- [] Ajustar geração de imagens da lib para grande volume de dados
+- [ ] No experimento de probing precisa reomover a primeira camada antes de usar o classificador. 
+  - Ver como isso influencia os filtros de arestas
+- [ ] Ver dataset do twiter, se tem algo util
+- [ ] Rodar com modelos diferentes do Berd --> GPT2 e ModernBERT (Entender melhor esse modernBERT)
+- [ ] Ajustar geração de imagens da lib para grande volume de dados
 
 - [ ] Começar a tirar metricas considerando a caracteristica multipartida da rede. Entender o que são as metricas para a rede multipartida --> Atenção na normalização das métricas.
 - [ ] Bolar alguma forma de desvinvular dados do codigo, sincronizar com alguma coisa e apagar imediatamente. 
     - [ ] Usar ssh somente para executar a lib, fazer todo o resto local.
 
-- [ ] Rodar com modelos diferentes do Berd --> GPT2 e ModernBERT (Entender melhor esse modernBERT)
 - [ ] Se for seguir essa abordagem tem que ver melhor isso aqui: "A naive classifier at a single layer cannot either, be-
 cause information about a particular span may be spread out across several layers," - BERT Rediscovers the Classical NLP Pipeline
   - [ ] Possivel usar uma abordagem acumulativa, onde layers são adicionadas, como no paper
@@ -37,6 +40,8 @@ cause information about a particular span may be spread out across several layer
 
 # ======================================================== DONE ========================================================
 
+- [x] Adicionar tamanho da janela de contexto de acordo com tamanho do modelo usado na lib - remover o 512 que ta lá
+- [x] Adicionar equações maiores para o experimento de diferentes dominios
 - [x] Melhorar experimento das noticias
   - [x] Adicionar um dominio completamente diferente (papers/receitas) - Rede pode não ser influenciada pelo assunto, fazer teste com estruturas diferentes (prontuario/receita)...
   - [x] Ver como as curvas se comportam --> Calcular a correlação no experimento das noticias
