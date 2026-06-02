@@ -1,5 +1,19 @@
+- [ ] Experimento a nível de regiões
+  - Para pegar embedding a nivel de regiões neurais precisa ser depois da redução de dimencionalidade, pois ela que dertemina as regiões.
+  - [ ] wordcontent quebrou no split para fazer o probing
+
+
+- [ ] Adicionar código ao input do experimento de estrutura
+- [ ] Olhar para os caras que deram certo, o que isso nos diz? Ver o que esta fazendo sentido...
 - [ ] No experimento de probing precisa reomover a primeira camada antes de usar o classificador. 
   - Ver como isso influencia os filtros de arestas
+- [ ] Fazer probing nas regiões
+- [ ] Usar GNN
+- [ ] Fazer analise estatistica para tudo. Melhor passar varios datasets pequenos que um só grande.
+- [ ] Teste com GPT para ver caso de equações validas e invalidas (BERT não é grande o bastante para isso) (Bom experimento de se fazer)
+
+ GNN --> ver se melhora resultado do classificador
+
 - [ ] Ver dataset do twiter, se tem algo util
 - [ ] Rodar com modelos diferentes do Berd --> GPT2 e ModernBERT (Entender melhor esse modernBERT)
 - [ ] Ajustar geração de imagens da lib para grande volume de dados
@@ -40,6 +54,7 @@ cause information about a particular span may be spread out across several layer
 
 # ======================================================== DONE ========================================================
 
+- [x] Calcular P-value para tudo que fiz envolvendo correlação
 - [x] Adicionar tamanho da janela de contexto de acordo com tamanho do modelo usado na lib - remover o 512 que ta lá
 - [x] Adicionar equações maiores para o experimento de diferentes dominios
 - [x] Melhorar experimento das noticias
